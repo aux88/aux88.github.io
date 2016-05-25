@@ -4,15 +4,134 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap Sample</title>
+        <meta name="description" content="佐藤淑美が作成したWebアプリケーションを紹介しています。">
+        <title>佐藤淑美|作品紹介</title>
         <!-- BootstrapのCSS読み込み -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <!-- JQuery読み込み -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- BootstrapのJS読み込み -->
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                font-family: YuGothic, "游ゴシック","メイリオ", Meiryo, 
+                "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", sans-serif;
+                font-size: 14px;
+            }
+            
+            footer {
+                margin-top: 50px;
+                padding: 20px;
+                border-top: 1px solid#e7e7e7;
+                background-color: #f8f8f8;
+                text-align: center;
+            }
+            
+            .row{
+                margin-top: 50px;
+            }
+            
+            .content h2 {
+                font-size: 28px;
+                margin-top: 0;
+                padding-bottom: 15px;
+            }
+            
+            #cover{
+                height: 220px;
+                background-image: url("bgphoto.JPG");
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #logo{
+                padding-top: 20px;
+                text-align: center;
+            }
+            #logo img{
+                max-width: 120px;
+                border: 2px solid #fff;
+                border-radius: 10%;
+            }
+            #logo h1{
+                letter-spacing: 0.15em;
+                font-size: 28px;
+                color: #fff;
+                text-shadow: 1px 1px 0px #000;
+            }
+            .icon {
+                text-align: center;
+            }
+              
+            .icon .glyphicon {
+                margin-bottom: 10px;
+                font-size: 36px;
+                color: #777;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <header>
+            <nav class="nav navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Yoshimi Satou</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+                            <li><a href="https://github.com/aux88">GitHub</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="cover">
+                <div id="logo">
+                    <img src="profile.JPG" alt>
+                    <h1>佐藤 淑美</h1>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="icon col-sm-2 hidden-xs">
+                  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+                </div>
+                <div class="content col-sm-10">
+                    <h2>自己紹介</h2>
+                    <p>
+                    2009年~現在まで、メーカーでソフトウェア開発に携わっています。
+                    <br />
+                    2016年、Webアプリケーション始めました。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="icon col-sm-2 hidden-xs">
+                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                </div>
+                <div class="content col-sm-10">
+                    <h2>作品紹介</h2>
+                    <div class="content col-sm-3">
+                      <img src="nyan.jpg" alt>
+                    </div>
+                    <div class="content col-sm-7">
+                      <h3>まねきにゃんこの逆襲</h3>
+                      <p>腕のレバーを下げると、お腹の引き出しから不思議な物が出てきます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Yoshimi Satou
+        </footer>
     </body>
 </html>
